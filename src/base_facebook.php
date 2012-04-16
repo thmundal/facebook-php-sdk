@@ -871,6 +871,7 @@ abstract class BaseFacebook
       $opts[CURLOPT_HTTPHEADER] = array('Expect:');
     }
 
+    // Prevent SSL timeout
     $opts[CURLOPT_SSLVERSION] = 3;
 
     curl_setopt_array($ch, $opts);
